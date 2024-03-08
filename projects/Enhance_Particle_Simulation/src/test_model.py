@@ -21,7 +21,8 @@ def enhance_particle_simulation(input_params, model_path):
         integrate_predicted_behavior(predicted_behavior)
 
 # Parameters
-model_path = '/home/oriol/tools/DailyTips/notebooks/Enhance_Particle_Simulation/models/particle_model.pth'
+project_root = os.path.abspath(__file__).rsplit("/", 2)[0]
+model_path = project_root + '/models/particle_model.pth'
 node = hou.pwd()
 geo = node.geometry()
 new_input_parms = [[p.position().x(),p.position().y(), p.position().z()] for p in geo.points()]

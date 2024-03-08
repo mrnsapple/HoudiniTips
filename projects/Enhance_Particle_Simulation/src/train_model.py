@@ -1,12 +1,15 @@
+import os
 import numpy as np
 import pandas as pd
 import torch
 import ast
-from model import ComplexNet
+
+from model import ParticleNet
+
 # Define a simple neural network model
 # Train the machine learning model
 def train_model(x, y):
-    model = ComplexNet()
+    model = ParticleNet()
     criterion = torch.nn.MSELoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
     for epoch in range(num_epochs):
@@ -46,8 +49,9 @@ def retrieve_particles(points_data_csv):
 
 # Parameters
 num_epochs = 400
-model_path = '/home/oriol/tools/DailyTips/notebooks/Enhance_Particle_Simulation/models/particle_model.pth'
-points_data_csv = '/home/oriol/tools/DailyTips/notebooks/Enhance_Particle_Simulation/data/test.csv'
+project_root = os.path.abspath(__file__).rsplit("/", 2)[0]
+model_path = project_root + '/models/particle_model.pth'
+points_data_csv = project_root +'/data/test.csv'
 x, y = retrieve_particles(points_data_csv)
 #input_params, simulated_behavior = generate_syntetic_data(3, 3, 1000)
 # Train the machine learning model
