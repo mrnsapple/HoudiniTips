@@ -4,6 +4,15 @@
 
 Welcome to **HoudiniTips**, a cutting-edge repository where the worlds of Machine Learning (ML), Artificial Intelligence (AI), and sophisticated mathematical algorithms merge with the dynamic domain of visual effects (VFX). The project aims to push the boundaries of what's possible in VFX by harnessing the power of advanced computational techniques. From generating breathtaking visual illusions to enhancing the realism of digital environments, HoudiniTips is at the forefront of innovation in digital media.
 
+## Projects
+
+- [**Enhance Particle Simulations**](projects/Enhance_Particle_Simulation/docs/DOCS.md)
+- [**Gradient Descent**](projects/Gradient_Descent/docs)
+- [**Heat Equation Patterns**](projects/heat_equation_patterns/docs/How to create patterns with the Heat equation in Vex language.pdf)
+- [**KNN Smothing**](projects/KNN_Smoothing/docs/KNN_3D_Smotthing.pdf)
+- [**Tree Scattering**](projects/TreeScattering/docs/DOCS.md)
+- [**Tutte Embedding**](projects/Tutte_Embedding/docs/DOCS.md)
+
 ## Features
 
 - **Advanced ML Models for VFX**: Implementations of the latest machine learning models that are specifically tuned for applications in visual effects. This includes deep learning techniques for image and video synthesis, enhancement, and transformation.
