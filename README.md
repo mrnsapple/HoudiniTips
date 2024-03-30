@@ -8,7 +8,7 @@ Welcome to **HoudiniTips**, a cutting-edge repository where the worlds of Machin
 
 - [**Enhance Particle Simulations**](projects/Enhance_Particle_Simulation/docs/DOCS.md)
 - [**Gradient Descent**](projects/Gradient_Descent/docs)
-- [**Heat Equation Patterns**](projects/heat_equation_patterns/docs/How to create patterns with the Heat equation in Vex language.pdf)
+- [**Heat Equation Patterns**](projects/heat_equation_patterns/docs/How_to_create_patterns_with_the_Heat_equation_in_Vex_language.pdf)
 - [**KNN Smothing**](projects/KNN_Smoothing/docs/KNN_3D_Smotthing.pdf)
 - [**Tree Scattering**](projects/TreeScattering/docs/DOCS.md)
 - [**Tutte Embedding**](projects/Tutte_Embedding/docs/DOCS.md)
