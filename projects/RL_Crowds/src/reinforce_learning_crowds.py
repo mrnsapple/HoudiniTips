@@ -5,14 +5,19 @@ from torch.distributions import Categorical
 import numpy as np
 
 class PolicyNetwork(nn.Module):
-    def __init__(self, input_size, hidden_size, output_size):
+    def __init__(self, input_size, hidden_sizes, output_size):
         super(PolicyNetwork, self).__init__()
-        self.network = nn.Sequential(
-            nn.Linear(input_size, hidden_size),
-            nn.ReLU(),
-            nn.Linear(hidden_size, output_size),
-            nn.Softmax(dim=-1),
-        )
+        layers = []
+        prev_size = input_size
+        for hidden_size in hidden_sizes:
+            layers.append(nn.Linear(prev_size, hidden_size))
+            layers.append(nn.ReLU())  # Activation function
+            prev_size = hidden_size
+        
+        layers.append(nn.Linear(prev_size, output_size))
+        layers.append(nn.Softmax(dim=-1))
+
+        self.network = nn.Sequential(*layers)
 
     def forward(self, x):
         return self.network(x)

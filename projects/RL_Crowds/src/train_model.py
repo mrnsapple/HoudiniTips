@@ -10,8 +10,9 @@ from environment import SimpleMoveEnv3D as Env
 def train(env, reinforce, num_episodes):
     for episode in range(num_episodes):
         state = env.reset()
-        for t in range(1, 1000):  # Replace 10000 with the actual max timestep
+        for t in range(1, 100):  # Replace 10000 with the actual max timestep
             action = reinforce.select_action(state)
+            print(action)
             state, reward, done, _ = env.step(action)
             reinforce.rewards.append(reward)
             if done:
@@ -21,14 +22,15 @@ def train(env, reinforce, num_episodes):
         print("Episode {} finished after {} timesteps".format(episode + 1, t + 1))
 
 # Params
-env = Env(target=np.array([-200, 0, 300]))
+env = Env()#target=np.array([-200, 0, 300]))
 input_size = env.state_size  # Adjust based on your environment's state size.
 hidden_size = 128
-output_size = env.action_space_size  # Adjust based on your environment's action space size
+hidden_sizes = [128, 128, 64, 64, 32]  
+output_size = 7  # Adjust based on your environment's action space size
 
 # Train the machine learning model
-reinforce = REINFORCE(input_size, hidden_size, output_size)
-train(env, reinforce, num_episodes=300)
+reinforce = REINFORCE(input_size, hidden_sizes, output_size)
+train(env, reinforce, num_episodes=400)
 
 # Save the trained model
 project_root = os.path.abspath(__file__).rsplit("/", 2)[0]

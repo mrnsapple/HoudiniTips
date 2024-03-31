@@ -1,25 +1,22 @@
-# External Includes
-import sys
-from importlib import reload
-import numpy as np
-sys.path.append("/home/oriol/tools/DailyTips/projects/RL_Crowds/src")
+# Extrernal Includes
+import os
+import torch
+import hou
+from importlib import reload 
 
-# Rl Crowd Includes
-import test_model
-reload(test_model)
+# RL Crowds Includes
+import reinforce_learning_crowds
+from environment import SimpleMoveEnv3D as Env
+reload(reinforce_learning_crowds)
 
-# Set new velocity for each agent
-step = 2
-node = hou.pwd()
-geo = node.geometry()
-for point in geo.points():
-    # Retrieve the point position, which correspond to the state of the reinforce learning algorith
-    state = point.attribValue("P")
-    # Retrieve the point velocity
-    velocity = point.attribValue("v")
-    # Get the action based in the state
-    print(state)
-    action = test_model.reinforce.select_action(np.array(state))
-    calculated_velocity = test_model.env.action_space[action]
-    velocity = velocity + calculated_velocity * step
-    point.setAttribValue("v", velocity)
+# Parameters
+input_size = 1  # Adjust based on your environment's state size.
+hidden_size = [128, 128, 64, 64, 32]  
+output_size = 1  # Adjust based on your environment's action space size
+
+# Load the trained model
+env = Env()
+reinforce = reinforce_learning_crowds.REINFORCE(input_size, hidden_size, output_size)
+project_root = os.path.abspath(__file__).rsplit("/", 2)[0]
+model_path = project_root + '/models/RL_Crowds.pth'
+reinforce.policy_network = torch.load(model_path)
