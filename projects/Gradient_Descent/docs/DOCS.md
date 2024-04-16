@@ -4,3 +4,7 @@ This involves:
 1-Defining a moving target whose path is a spiral.
 2-Defining an objective function that represents the distance from the point to this target.
 3-Using gradient descent to move the point towards the target, with the target moving every iteration to create a spiral path.
+
+![The Power Of Gradient Descent](./images/thePowerOfGradientDescent.jpeg)
+
+Enjoy this? [Share the post with others and follow me](https://oriolmanzano.com/newsletter)!
