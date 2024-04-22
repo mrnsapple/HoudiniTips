@@ -1,5 +1,7 @@
 # Combining Houdini and Machine Learning for Advanced Particle Simulation
 
+![Houdini Particle Sim With Machine Learning](./images/houdiniParticleSimWithMachineLearning.png)
+
 I recently have been fascinated about combining [Houdini's powerful particle simulation capabilities** with the **cutting-edge technology of machine learning](https://youtu.be/7ZCI9lUCB7w?si=4XOFYn9I89DkuPBw). By leveraging machine learning algorithms, we can access innovative ways to enhance and control particle behavior within Houdini.
 
 ## Understanding Particle Simulation
@@ -26,3 +28,5 @@ I’ve made a tutorial centered on how to extract point positions from Houdini p
 To watch the tutorial, just hit the link below:
 
 [Check out the full YouTube video here](https://youtu.be/7ZCI9lUCB7w?si=4XOFYn9I89DkuPBw) (and be sure to subscribe to my channel).
+
+Enjoy this? [Share the post with others and follow me](https://oriolmanzano.com/newsletter)!

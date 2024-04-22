@@ -1,5 +1,7 @@
 # Revolutionizing Environment Art with Real Forest Data and Machine Learning
 
+![Environment Scattering In Houdini With ML](./images/environmentScatteringInHoudiniWithML.png)
+
 The usage of real forest data for scatter environments can revolutionize the way environment artists generate their scatters, offering unprecedented realism and depth in digital environments. By leveraging real forest data, we can now populate vast digital landscapes with 3D scatterings that mirror the complexity and diversity of natural forests. Machine learning accelerates this process, allowing for the rapid generation of these environments with stunning accuracy and detail.
 
 This method can quickly generate diverse forest ecosystems that accurately reflect real-world complexity and variability. Once the model is trained, environments can be created much faster than traditional procedural methods, potentially reducing production times. And it's making the process more accessible to artists without extensive technical backgrounds in procedural generation.
