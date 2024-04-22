@@ -13,8 +13,10 @@ Welcome to **HoudiniTips**, a cutting-edge repository where the worlds of Machin
 - [**Heat Equation Patterns**](projects/heat_equation_patterns/docs/How_to_create_patterns_with_the_Heat_equation_in_Vex_language.pdf)
 - [**KNN Smothing**](projects/KNN_Smoothing/docs/KNN_3D_Smotthing.pdf)
 - [**Quickhull Convex Hull**](projects/Quickhull_Convex_Hull/docs/DOCS.md)
-- [**Rapidly Expliring Random Tree**](projects/RapidlyExploringRandomTree/docs/How to perform Rapidly exploring random tree(RRT) algorithm.pdf)
-- [**Ray Plane Intersection**](projects/Ray_Plane_Intersection/docs/How to perform ray plane intersection.pdf)
+- [**Rapidly Expliring Random Tree**](projects/RapidlyExploringRandomTree/docs/howToPerformRapidlyExploringRandomTree(RRT)Algorithm.pdf)
+- [**Ray Plane Intersection**](projects/Ray_Plane_Intersection/docs/howToPerformRayPlaneIntersection.pdf)
+- [**Ray Sphere Intersection**](projects/Ray_Sphere_Intersection/docs/howToPerformRaySphereIntersection.pdf)
+- [**Reinforce Learning Crowds**](projects/RL_Crowds/docs/DOCS.md)
 - [**Tree Scattering**](projects/TreeScattering/docs/DOCS.md)
 - [**Tutte Embedding**](projects/Tutte_Embedding/docs/DOCS.md)
 
