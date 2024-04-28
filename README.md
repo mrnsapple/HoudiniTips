@@ -12,6 +12,7 @@ Welcome to **HoudiniTips**, a cutting-edge repository where the worlds of Machin
 - [**Gradient Descent**](projects/Gradient_Descent/docs)
 - [**Heat Equation Patterns**](projects/heat_equation_patterns/docs/How_to_create_patterns_with_the_Heat_equation_in_Vex_language.pdf)
 - [**KNN Smothing**](projects/KNN_Smoothing/docs/KNN_3D_Smotthing.pdf)
+- [**Marching Cubes**](projects/MarchingCubes/docs/DOCS.md)
 - [**Quickhull Convex Hull**](projects/Quickhull_Convex_Hull/docs/DOCS.md)
 - [**Rapidly Expliring Random Tree**](projects/RapidlyExploringRandomTree/docs/howToPerformRapidlyExploringRandomTree(RRT)Algorithm.pdf)
 - [**Ray Plane Intersection**](projects/Ray_Plane_Intersection/docs/howToPerformRayPlaneIntersection.pdf)
