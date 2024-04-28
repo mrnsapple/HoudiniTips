@@ -26,4 +26,4 @@ The Marching Cubes algorithm remains a cornerstone in the field of scientific vi
 Whether you are a machine learning enthusiast, a researcher, or just curious about the intersection of AI and graphics, I invite you to explore this implementation and consider the potential of such tools in your own projects.
 
 
-- [**Marching Cubes Technical Documentation**](projects/MarchingCubes/docs/TECH_DOCS.md)
+- [**Marching Cubes Technical Documentation**](https://github.com/mrnsapple/HoudiniTips/blob/main/projects/MarchingCubes/docs/TECH_DOCS.md)
